@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<title>Zain's Portfolio</title>
 <style>
-  h1 { color: Black;
+  h1 { color: White;
     font-family: Arial,sans-serif;
   text-align: center; 
-    background-color: White;
+    background-color: Black;
   height: 60px;
   border: 4px;
   display: flex;
@@ -27,15 +27,16 @@
   align-items: center;
   padding: 1px;}
     
-  body {color: White;
+  body {color: Black;
   font-family: Arial,sans-serif;
  padding: 10px;
   margin: 0;
-  background-color: Black}
+  background-color: White}
   
   section {margin: 10px;
   padding: 1px;
-  padding-top: 10px;}
+  padding-top: 10px;
+  scroll-margin-top: 80px;}
   
   .project { display: flex;
   align-items: center;
@@ -69,7 +70,7 @@
   nav {position: fixed;
   top: 0;
   width: 100%;
-  background-color: Black;
+  background-color: DarkGray;
   z-index: 1000;
     display: flex;
     justify-content: center;
@@ -78,21 +79,23 @@
   
   nav ul {list-style-type: none;
   margin: 0;
-  padding:0;
+  padding: 0;
   display: flex;
   gap: 20px;}
   
   nav li {display: inline;}
   
-  nav a: {color: Blue;
+  nav a {color: Blue;
   text-decoration: none;}
   
-  nav a: hover {color: red;
+  nav a .hover {color: red;
   font-weight: bold;}
   
-  nav a: active {color: green;
+  nav a .active {color: green;
   text-decoration: underline;
   font-weight: bold;}
+  
+  html {scroll-behavior: smooth;}
   
   
 
@@ -101,9 +104,9 @@
 	<body>
     <nav>
       <ul>
-<li><a href="#about"> About Me</a></li>   |
-<li><a href="#portfolio">Portfolio and Projects</a></li> |
-<li><a href="#education">Education and Experience</a></li> |
+<li><a href="#about"> About Me</a></li>   
+<li><a href="#portfolio">Portfolio and Projects</a></li> 
+<li><a href="#education">Education and Experience</a></li> 
 <li><a href="#contact">Contact Information</a></li> 
       </ul> 
     </nav>
@@ -112,16 +115,18 @@
   
 
  <section id="about">
-   <h2 style="border:4px solid White;">About Me</h2>
+   <h2 style="border:4px solid Black;">About Me</h2>
 <p>
   Hello, My name is Zain and I am a 2nd Year Student at The University Of Waterloo. I am going to be Studying Global Business and Digital Arts. Some of my interests include, Film, Digital Media, UI/UX design, Photography, Videography and more </p>
   
  <!-- Image from https://www.stratfordchamber.com/member-directory/stratford-school-of-interaction-design-and-business-university-of-waterloo-->
-   <img src="5eff6c94cfab3c15ceba3913_96df8fb1b04c95b408e4ef66464305fa.jpeg" alt="University of Waterloo Stratford school", width="500", height="300">
+   <img src="5eff6c94cfab3c15ceba3913_96df8fb1b04c95b408e4ef66464305fa.jpeg" alt="University of Waterloo Stratford school", width="500", height="300", style="border:4px solid Black", margin: 10px auto;>
+   
+
 </section>
 
     <section id="portfolio">
-  <h2 style="border:4px solid white ;">Portfolio and Projects</h2>
+  <h2 style="border:4px solid Black ;">Portfolio and Projects</h2>
   <p> During my time in the GBDA propgram at the University of Waterloo, I've had many opportunities to express my creativity. One of my favourite classes during my time in GBDA so far was GBDA 201: Introduction to Digital Media. One of my favourite projects that we worked on during this class was the 1st project, our photography project. This Project gave me the opportunity to express my creativity through one of my favourite mediums, Photography and truly gave me free reign to do whatever when it came to taking these photos. Another project that I thoroughly enjoyed creating was the short, silent film that we made for our 2nd project. <p>
       
       Watch it here:  <a href="https://youtu.be/m4UmkOGzDQU" target="_blank">SLC Marketplace: A Silent Film</a>.
@@ -140,7 +145,7 @@
     
   <div class="project">
     
-     <img src="0X9A0043.JPG" alt="Macro photo of a flower", width="600", height="400", style="margin-bottom: 10px", padding: 10px;> 
+  <img src="0X9A0043.JPG" alt="Macro photo of a flower", width="600", height="400", style="margin-bottom: 10px", padding: 20px;> 
     
       </div>
       
@@ -169,15 +174,17 @@
       
     </section>
   <section id="education">
-  <h2 style="border:4px solid White;" >Education/Experience</h2>
+  <h2 style="border:4px solid Black;" >Education/Experience</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     
     <img src="university-of-waterloo.jpg" alt="University of Waterloo Stratford School", width="500", height="300">
     
+    
+    
     </section>  
     
     <section id="contact">
-    <h2 style="border:4px solid White;">Contact Information</h2>
+    <h2 style="border:4px solid Black;">Contact Information</h2>
     <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
      </p> 
